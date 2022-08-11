@@ -20,7 +20,7 @@
 }
 
 html{
-  font-size: 62.5%;
+  font-size: 62.5%;           
   overflow-x: hidden;
   scroll-padding-top: 6rem;
   scroll-behavior: smooth;
@@ -292,6 +292,9 @@ header .search-bar-container label:hover{
   background:var(--orange);
 }
 
+
+
+
 .book .row{
   display: flex;
   flex-wrap: wrap;
@@ -301,6 +304,7 @@ header .search-bar-container label:hover{
 .book{
   position: relative;
   top: 60px;
+  margin-bottom: 80px;
 }
 .book .row .image{
   flex:1 1 40rem;
@@ -426,6 +430,9 @@ header .search-bar-container label:hover{
   box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
 }
 
+
+
+
 .gallery .box-container{
   display: flex;
   flex-wrap: wrap;
@@ -473,6 +480,9 @@ header .search-bar-container label:hover{
   color:#eee;
   padding:.5rem 0;
 }
+
+
+
 
 .review .review-slider{
   padding-bottom: 2rem;
@@ -576,15 +586,6 @@ header .search-bar-container label:hover{
   margin: 20px;
 
 }
-
-
-
-
-
-
-
-
-
 
 
 
