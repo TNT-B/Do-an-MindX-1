@@ -13,6 +13,7 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
 
 </head>
 
@@ -26,15 +27,48 @@
 
         <a href="#" class="logo"><span>T</span>ravel</a>
 
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="book.html">book</a>
-            <a href="#packages">packages</a>
-            <a href="#services">services</a>
-            <a href="#gallery">gallery</a>
-            <a href="#review">review</a>
-            <a href="./contact.html">contact</a>
+        <div class="boss">
+            
+        <nav   class="navbar cha">
+            <div class="dropdown">
+                <div class="dropdown__select">
+                  <a  href="#home" class="dropdown__select ">Home</a>
+                  <i class="fa fa-caret-down dropdown__caret"></i>
+                </div>
+              
+              <ul class="dropdown__list">
+              
+                <li class="dropdown__item">
+                  <a  href="#packages" class="dropdown__select">packages </a> <!-- <i style="padding-left: 105px;" class="fa fa-plus-circle dropdown__icon"></i> -->
+                  
+                </li>
+            
+                  <li class="dropdown__item">
+                    <a  href="#services" class="dropdown__select">services</a> <!-- <i style="padding-left: 120px;" class="fa fa-user dropdown__icon"></i> -->
+                    
+                </li>
+            
+                <li class="dropdown__item">
+                  <a href="#gallery" class="dropdown__select">gallery</a> <!-- <i style="padding-left: 130px;" class="fa fa-cog dropdown__icon"></i> -->
+                  
+                </li>
+            
+                <li class="dropdown__item">
+                  <a   href="#review" class="dropdown__select">review</a> <!-- <i style="padding-left: 130px;" class="fa fa-circle dropdown__icon"></i> -->
+                  
+                </li>
+                
+              </ul>
+              </div>
+           
+             <div class="con"> 
+          <div class="nho">  <a class="dropdown__select" href="book.html" style="padding: 0; font-size: 2.2rem;"  >book</a></div>
+          
+            <div class="nho"><a class="dropdown__select" href="./contact.html" style="padding: 0; font-size: 2.2rem;">contact</a></div>
+                </div>
         </nav>
+        
+        <div>
 
         <div class="icons">
             <i class="fas fa-search" id="search-btn"></i>
@@ -614,6 +648,9 @@
 
     <!-- custom js file link  -->
     <script src="app.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 
 </body>
 
