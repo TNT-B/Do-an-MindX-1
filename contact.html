@@ -112,6 +112,8 @@
       </div>
 
     </div>
+
+    
     <div class="modal open js-modal">
       <section class="contact" id="contact">
         <h1 class="heading">
@@ -159,21 +161,27 @@
   </body>
 
 
+
     <script>
+
       const contactBtns=document.querySelectorAll('.js-contact');
       const modal=document.querySelector('.js-modal')
       const modalClose=document.querySelector('.js-modal-close')
+      
       function showContact(){
         modal.classList.add('open')
-    
       }
+
       function hideContact(){
         modal.classList.remove('open')
       }
+
       for (const contactBtn of contactBtns ){
         contactBtn.addEventListener('click',showContact)
       }
+
       modalClose.addEventListener('click',hideContact)
+
     </script>
 
 
