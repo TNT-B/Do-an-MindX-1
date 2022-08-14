@@ -12,17 +12,13 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-
-
   <body>
-
-    <!-- header -->
     <header>
       <div id="menu-bar" class="fas fa-bars"></div>
 
       <a href="./index.html" class="logo"><span>H</span>ome</a>
 
-      <!-- <div class="icons">
+      <div class="icons">
         <i class="fas fa-search" id="search-btn"></i>
         <i class="fas fa-user" id="login-btn"></i>
       </div>
@@ -30,13 +26,8 @@
       <form action="" class="search-bar-container">
         <input type="search" id="search-bar" placeholder="search here..." />
         <label for="search-bar" class="fas fa-search"></label>
-      </form> -->
-      
+      </form>
     </header>
-
-
-
-  <!-- CONTACT -->
 
     <div class="list-card">
       <div class="card">
@@ -112,10 +103,8 @@
       </div>
 
     </div>
-
-    
     <div class="modal open js-modal">
-      <section class="contact" id="contact">
+      <section class="contact js-modal-container" id="contact">
         <h1 class="heading">
           <span>c</span>
           <span>o</span>
@@ -150,41 +139,39 @@
               cols="30"
               rows="10"
             ></textarea>
-           
+           <div class="js-input">
              <input type="submit" class="btn" value="send message" />
+           </div>
              
           </form>
         </div>
       </section>
     </div>
-
   </body>
-
-
-
     <script>
-
       const contactBtns=document.querySelectorAll('.js-contact');
       const modal=document.querySelector('.js-modal')
       const modalClose=document.querySelector('.js-modal-close')
-      
+      const modalContainer=document.querySelector('.js-modal-container')
+      const modalInput=document.querySelector('.js-input')
       function showContact(){
         modal.classList.add('open')
+    
       }
-
       function hideContact(){
         modal.classList.remove('open')
       }
-
       for (const contactBtn of contactBtns ){
         contactBtn.addEventListener('click',showContact)
       }
-
       modalClose.addEventListener('click',hideContact)
+      modal.addEventListener('click',hideContact)
+      modalContainer.addEventListener('click',function(event){
+        event.stopPropagation()
+      })
+      modalInput.addEventListener('click',function(event){
+        alert('coming soon in travel web ver 2.0 ')
+      })
 
     </script>
-
-
-
-
 </html>
