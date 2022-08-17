@@ -274,15 +274,18 @@ body.cold #weather {
 	background-image: url(./images/cold.png);
 }
 
+
 #weather {
+  margin-top: 50px;
 	min-width: 350px;
-	height: 600px;
+	height: 510px;
 	background: no-repeat center/cover;
 	text-align: center;
-	padding: 30px 20px;
+	padding:10px 20px;
 	border-radius: 10px;
 	transition: 0.4s;
 }
+
 
 #weather input {
 	padding: 10px 20px;

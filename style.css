@@ -89,7 +89,7 @@ header .logo span{
 
 header .navbar a{
   color:#fff;
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin:0 .8rem;
 }
 
@@ -226,6 +226,17 @@ header .search-bar-container label:hover{
   cursor: pointer;
 }
 
+
+
+
+/* header .adjust-btn-dark{
+  color: black;
+} */
+
+
+
+
+
 #menu-bar{
   color:#fff;
   border:.1rem solid #fff;
@@ -343,6 +354,9 @@ header .search-bar-container label:hover{
   color:#666;
 }
 
+
+/* packages */
+
 .packages .box-container{
   display: flex;
   flex-wrap: wrap;
@@ -368,8 +382,15 @@ header .search-bar-container label:hover{
 
 .packages .box-container .box .content h3{
   font-size:2rem;
-  color:#333;
+  color:rgb(89, 87, 87);
 }
+
+.content-dark h3{
+  font-size:2rem;
+  color:#fff;
+}
+
+
 
 .packages .box-container .box .content h3 i{
   color:var(--orange);
@@ -388,7 +409,7 @@ header .search-bar-container label:hover{
 
 .packages .box-container .box .content .price{
   font-size: 2rem;
-  color:#333;
+  color:#666;
   padding-top: 1rem;
 }
 
@@ -590,6 +611,13 @@ header .search-bar-container label:hover{
 }
 
 
+/*dark */
+.dark-main{
+  background-color: black;
+  color:white;
+  
+}
+
 
 
 
@@ -616,14 +644,16 @@ header .search-bar-container label:hover{
 
 }
 
-@media (max-width:768px){
 
+@media (max-width:768px){
+  
   #menu-bar{
     display: initial;
   }
-
   header .navbar{
     position: absolute;
+    display: block;
+    height: 500px;
     top:100%; right:0; left: 0;
     background: #333;
     border-top: .1rem solid rgba(255,255,255,.2);
@@ -636,6 +666,7 @@ header .search-bar-container label:hover{
   }
 
   header .navbar a{
+    width: 100%;
     display: block;
     border-radius: .5rem;
     padding:1.5rem;

@@ -100,9 +100,10 @@ img {
   display: none ;
 
 }
-.modal.open{
+.open{
   display: flex;
 }
+
 .contact{
   position: relative;
   background-color: #242628;
